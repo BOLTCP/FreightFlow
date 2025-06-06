@@ -1,0 +1,205 @@
+﻿@model FreightFlow.Models.Equipments
+@{
+    ViewData["Title"] = "AddEquipment";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freight Inventory</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+
+    <style>
+        .progress {
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+
+        .bar {
+            width: 0%;
+            height: 30px;
+            background-color: #4caf50;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <form asp-action="FillNullValues">
+        <div class="container">
+
+            <h1 class="text-center mb-5">Freight Inventory</h1>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div style="color:black">EquipmentId</div>
+                                <div class="form-group">
+                                    <label asp-for="EquipmentId"></label>
+                                    <input asp-for="EquipmentId" class="form-control" />
+                                    <span asp-validation-for="EquipmentId" class="text-danger"></span>
+                                </div>
+                            </th>
+                            <th>
+                                <div style="color:black">Name</div>
+                                <div class="form-group">
+                                    <label asp-for="Name"></label>
+                                    <input asp-for="Name" class="form-control" />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+                            </th>
+                            <th>
+                                <div style="color:black">Type</div>
+                                <div class="form-group">
+                                    <label asp-for="Type"></label>
+                                    <input asp-for="Type" class="form-control" />
+                                    <span asp-validation-for="Type" class="text-danger"></span>
+                                </div>
+                            </th>
+            </div>
+            <th>
+            <th>
+                <div style="color:black">LoadCapacity</div>
+                <div class="form-group">
+                    <label asp-for="LoadCapacity"></label>
+                    <input type="number" asp-for="LoadCapacity" class="form-control" />
+                    <span asp-validation-for="LoadCapacity" class="text-danger"></span>
+                </div>
+            </th>
+            <th>
+                <div style="color:black">IDofDelivery</div>
+                <div class="form-group">
+                    <label asp-for="IDofDelivery"></label>
+                    <input type="number" asp-for="IDofDelivery" class="form-control" />
+                    <span asp-validation-for="IDofDelivery" class="text-danger"></span>
+                </div>
+            </th>
+            <th>
+                <div style="color:black">NameofDelivery</div>
+                <div class="form-group">
+                    <label asp-for="NameofDelivery"></label>
+                    <input type="number" asp-for="NameofDelivery" class="form-control" />
+                    <span asp-validation-for="NameofDelivery" class="text-danger"></span>
+                </div>
+            </th><th>
+                <div style="color:black">DescriptionofDelivery</div>
+                <div class="form-group">
+                    <label asp-for="DescriptionofDelivery"></label>
+                    <input type="number" asp-for="DescriptionofDelivery" class="form-control" />
+                    <span asp-validation-for="DescriptionofDelivery" class="text-danger"></span>
+                </div>
+            </th><th>
+                <div style="color:black">CurrentStatus</div>
+                <div class="form-group">
+                    <label asp-for="CurrentStatus"></label>
+                    <input type="number" asp-for="CurrentStatus" class="form-control" />
+                    <span asp-validation-for="CurrentStatus" class="text-danger"></span>
+                </div>
+            </th>
+            <th>
+                <div style="color:black">CurrentLoad</div>
+                <div class="form-group">
+                    <label asp-for="CurrentLoad"></label>
+                    <input type="number" asp-for="CurrentLoad" class="form-control" />
+                    <span asp-validation-for="CurrentLoad" class="text-danger"></span>
+                </div>
+            </th>
+            <th>
+                <div style="color:black">LoadId</div>
+                <div class="form-group">
+                    <label asp-for="LoadId"></label>
+                    <input type="number" asp-for="LoadId" class="form-control" />
+                    <span asp-validation-for="LoadId" class="text-danger"></span>
+                </div>
+            </th>
+           
+            </tr>
+            </thead>
+            </table>
+        </div>
+        <div align="center">
+            <a asp-action="FillNullValues" type="submit" value="FillNullValues" class="btn btn-success">FillNullValues</a>
+           
+            <a class="btn btn-primary" asp-area="" asp-controller="Equipment" asp-action="EquipmentDetails">OrderHistory</a>
+            <a class="btn btn-secondary" asp-area="" asp-controller="Equipment" asp-action="EditEquipment">OrderEdit</a>
+            <a class="btn btn-danger" asp-area="" asp-controller="Equipment" asp-action="RemoveEquipment">OrderCancel</a>
+
+        </div>
+
+
+        <div class="progress-bar">
+            <div class="progress" id="progress">0%</div>
+        </div>
+
+        <script>
+            // Function to fetch current load from the database and update the progress bar
+            function updateProgress() {
+                // Send an AJAX request to the server to get the current load
+                fetch('/api/OrderProgress/GetCurrentLoad')
+                    .then(response => response.json())
+                    .then(data => {
+                        const currentLoad = data.currentLoad;
+                        const maxLoad = 22; // Assuming the maximum load is 22
+                        const progress = Math.floor((currentLoad / maxLoad) * 100);
+
+                        // Update the width of the progress bar
+                        document.getElementById('progress').style.width = progress + '%';
+                        document.getElementById('progress').innerText = progress + '%';
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            }
+
+            // Update the progress bar every 5 seconds (you can adjust the interval)
+            setInterval(updateProgress, 5000);
+
+            // Initial call to update progress when the page loads
+            updateProgress();
+        </script>
+
+
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success">
+                @TempData["SuccessMessage"]
+            </div>
+        }
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger">
+                @TempData["ErrorMessage"]
+            </div>
+        }
+
+        @section Scripts {
+            @{
+                await Html.RenderPartialAsync("_ValidationScriptsPartial");
+            }
+        }
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLR5Rg5aTys1c6xEAA9k1A08lls5Q4tFi5VDV5f7hN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-PLMCHElMhLccK35ZfAosz16p7eKniydSfqY9eG4mcWmnpBKNFVuh87mjo+pG/E29" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLR5Rg5aTys1c6xEAA9k1A08lls5Q4tFi5VDV5f7hN" crossorigin="anonymous"></script>
+    <script src="~/js/site.js"></script>
+</body>
+</html>

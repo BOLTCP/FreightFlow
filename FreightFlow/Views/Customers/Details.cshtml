@@ -1,0 +1,86 @@
+﻿@*@model FreightFlow.Models.Customer
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Details">Edit</a>
+    <a asp-action="Index">Back to List</a>
+</div>
+*@
+@model FreightFlow.Models.OrderHistoryViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+   
+<div>
+
+
+
+    @if (Model.Customers != null && Model.Customers.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Password</th>
+                    <!-- Add other columns as necessary -->
+                </tr>
+            </thead>
+            <tbody>
+
+
+                @foreach (var item in Model.Customers)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Email</td>  
+                        <td>@item.Phone</td>
+                        <td>@item.Password</td>
+                        <!-- Add other columns as necessary -->
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    <a class="btn btn-primary" asp-action="CustomerEdit">CustomerEdit</a>
+    <a class="btn btn-danger" asp-action="Delete">Delete</a>
+</div>

@@ -1,0 +1,77 @@
+﻿@model FreightFlow.Models.OrderHistoryViewModel
+
+@{
+    ViewData["Title"] = "OrderEdit";
+}
+
+<h1>Details</h1>
+
+<div>
+    @if (Model.FreightInventories != null && Model.FreightInventories.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>No</th>
+                    <th>Item Name</th>
+                    <th>Origin</th>
+                    <th>Destination</th>
+                    <th>Contents</th>
+                    <th>ScheduledLoad</th>
+                    <th>ScheduledDelivery</th>
+                    <th>Status</th>
+                    <th>Description</th>
+                    <th>Weight</th>
+                    <th>Height</th>
+                    <th>Length</th>
+                    <th>Width</th>
+                    <!-- Add other columns as necessary -->
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    var counter = 1;
+                }
+                @foreach (var item in Model.FreightInventories)
+                {
+                    <tr>
+                        <td>@item.DeliveryId</td>
+                        <td>@counter</td>
+                        <td>@item.DeliveryName</td>
+                        <td>@item.Origin</td>
+                        <td>@item.Destination</td>
+                        <td>@item.Contents</td>
+                        <td>@item.ScheduledLoad</td>
+                        <td>@item.ScheduledDelivery</td>
+                        <td>@item.Status</td>
+                        <td>@item.Description</td>
+                        <td>@item.Weight</td>
+                        <td>@item.Height</td>
+                        <td>@item.Length</td>
+                        <td>@item.Width</td>
+                        <!-- Add other columns as necessary -->
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div>
+            @foreach (var item in Model.FreightInventories)
+            {
+                <a class="btn btn-primary" asp-action="Delete" asp-route-id="@item.DeliveryId">Link Text for Delivery ID: @item.DeliveryId</a>
+             
+            }
+
+        </div>
+
+    }
+
+    else
+    {
+        <p>No records found for Client ID: @Global1.ClientId</p>
+    }
+
+
+
+</div>

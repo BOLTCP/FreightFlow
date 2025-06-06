@@ -1,0 +1,130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\source\\repos\\FreightFlow\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9FD9C470-431E-41F8-B6AE-C489A69F07F2}|FreightFlow\\FreightFlow.csproj|c:\\users\\admin\\source\\repos\\freightflow\\freightflow\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FD9C470-431E-41F8-B6AE-C489A69F07F2}|FreightFlow\\FreightFlow.csproj|solutionrelative:freightflow\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FD9C470-431E-41F8-B6AE-C489A69F07F2}|FreightFlow\\FreightFlow.csproj|c:\\users\\admin\\source\\repos\\freightflow\\freightflow\\views\\equipment\\equipmentdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FD9C470-431E-41F8-B6AE-C489A69F07F2}|FreightFlow\\FreightFlow.csproj|solutionrelative:freightflow\\views\\equipment\\equipmentdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FD9C470-431E-41F8-B6AE-C489A69F07F2}|FreightFlow\\FreightFlow.csproj|c:\\users\\admin\\source\\repos\\freightflow\\freightflow\\models\\equipments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FD9C470-431E-41F8-B6AE-C489A69F07F2}|FreightFlow\\FreightFlow.csproj|solutionrelative:freightflow\\models\\equipments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FD9C470-431E-41F8-B6AE-C489A69F07F2}|FreightFlow\\FreightFlow.csproj|C:\\Users\\admin\\source\\repos\\FreightFlow\\freightflow\\controllers\\deliverycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FD9C470-431E-41F8-B6AE-C489A69F07F2}|FreightFlow\\FreightFlow.csproj|solutionrelative:freightflow\\controllers\\deliverycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EquipmentDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FreightFlow\\FreightFlow\\Views\\Equipment\\EquipmentDetails.cshtml",
+              "RelativeDocumentMoniker": "FreightFlow\\Views\\Equipment\\EquipmentDetails.cshtml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\FreightFlow\\FreightFlow\\Views\\Equipment\\EquipmentDetails.cshtml",
+              "RelativeToolTip": "FreightFlow\\Views\\Equipment\\EquipmentDetails.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAA8AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T08:28:03.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EquipmentController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FreightFlow\\FreightFlow\\Controllers\\EquipmentController.cs",
+              "RelativeDocumentMoniker": "FreightFlow\\Controllers\\EquipmentController.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\FreightFlow\\FreightFlow\\Controllers\\EquipmentController.cs",
+              "RelativeToolTip": "FreightFlow\\Controllers\\EquipmentController.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAiwBQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T03:55:36.658Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "87f43fc1-bd58-45c9-acf2-3d53cb9ddab4",
+        "Display": 0,
+        "X": 965,
+        "Y": 182,
+        "Width": 708,
+        "Height": 686,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeliveryController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FreightFlow\\FreightFlow\\Controllers\\DeliveryController.cs",
+              "RelativeDocumentMoniker": "FreightFlow\\Controllers\\DeliveryController.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\FreightFlow\\FreightFlow\\Controllers\\DeliveryController.cs",
+              "RelativeToolTip": "FreightFlow\\Controllers\\DeliveryController.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAAEcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T01:54:27.535Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "a63a60b4-9652-475f-b6e4-da8cefba4fba",
+        "Display": 0,
+        "X": 1052,
+        "Y": 97,
+        "Width": 708,
+        "Height": 780,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Equipments.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\FreightFlow\\FreightFlow\\Models\\Equipments.cs",
+              "RelativeDocumentMoniker": "FreightFlow\\Models\\Equipments.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\FreightFlow\\FreightFlow\\Models\\Equipments.cs",
+              "RelativeToolTip": "FreightFlow\\Models\\Equipments.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T08:29:44.455Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

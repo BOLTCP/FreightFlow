@@ -1,0 +1,173 @@
+﻿@model FreightFlow.Models.FreightInventories
+@{
+    ViewData["Title"] = "AddOrder";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freight Inventory</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form asp-action="AddOrder">
+        <div class="container">
+
+            <h1 class="text-center mb-5">Freight Inventory</h1>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div style="color:black">DeliveryName</div>
+                                <div class="form-group">
+                                    <label asp-for="DeliveryName"></label>
+                                    <input asp-for="DeliveryName" class="form-control" />
+                                    <span asp-validation-for="DeliveryName" class="text-danger"></span>
+                                </div>
+                            </th>
+                            <th>
+                                <div style="color:black">Origin</div>
+                                <div class="form-group">
+                                    <label asp-for="Origin"></label>
+                                    <input asp-for="Origin" class="form-control" />
+                                    <span asp-validation-for="Origin" class="text-danger"></span>
+                                </div>
+                            </th>
+                            <th>
+                                <div style="color:black">Destination</div>
+                                <div class="form-group">
+                                    <label asp-for="Destination"></label>
+                                    <input asp-for="Destination" class="form-control" />
+                                    <span asp-validation-for="Destination" class="text-danger"></span>
+                                </div>
+                            </th>
+                            <th>
+                                <div style="color:black">Contents</div>
+                                <div class="form-group">
+                                    <label asp-for="Contents"></label>
+                                    <input asp-for="Contents" class="form-control" />
+                                    <span asp-validation-for="Contents" class="text-danger"></span>
+                                </div>
+                            </th>
+            </div>
+            <th>
+                <div style="color:black">Weight</div>
+                <div class="form-group">
+                    <label asp-for="Weight"></label>
+                    <input type="number" asp-for="Weight" class="form-control" />
+                    <span asp-validation-for="Weight" class="text-danger"></span>
+                </div>
+            </th>
+            <th>
+                <div style="color:black">Length</div>
+                <div class="form-group">
+                    <label asp-for="Length"></label>
+                    <input type="number" asp-for="Length" class="form-control" />
+                    <span asp-validation-for="Length" class="text-danger"></span>
+                </div>
+            </th>
+            <th>
+                <div style="color:black">Width</div>
+                <div class="form-group">
+                    <label asp-for="Width"></label>
+                    <input type="number" asp-for="Width" class="form-control" />
+                    <span asp-validation-for="Width" class="text-danger"></span>
+                </div>
+            </th>
+            <th>
+                <div style="color:black">Height</div>
+                <div class="form-group">
+                    <label asp-for="Height"></label>
+                    <input type="number" asp-for="Height" class="form-control" />
+                    <span asp-validation-for="Height" class="text-danger"></span>
+                </div>
+            </th>
+            <th>
+                <div style="color:black">ScheduledLoad</div>
+                <div class="form-group">
+                    <label asp-for="ScheduledLoad"></label>
+                    <input type="datetime-local" asp-for="ScheduledLoad" class="form-control" />
+                    <span asp-validation-for="ScheduledLoad" class="text-danger"></span>
+                </div>
+            </th>
+            <th>
+                <div style="color:black">ScheduledDelivery</div>
+                <div class="form-group">
+                    <label asp-for="ScheduledDelivery"></label>
+                    <input type="datetime-local" asp-for="ScheduledDelivery" class="form-control" />
+                    <span asp-validation-for="ScheduledDelivery" class="text-danger"></span>
+                </div>
+            </th>
+            <th>
+                <div style="color:black">Status</div>
+                <div class="form-group">
+                    <label asp-for="Status"></label>
+                    <input asp-for="Status" class="form-control" />
+                    <span asp-validation-for="Status" class="text-danger"></span>
+                </div>
+            </th>
+            <th>
+                <div style="color:black">Description</div>
+                <div class="form-group">
+                    <label asp-for="Description"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+            </th>
+            </tr>
+            </thead>
+            </table>
+        </div>
+        <div align="center">
+            <a asp-action="AddOrder" type="submit" value="AddOrder" class="btn btn-success">AddOrder</a>
+           
+           @* <a class="btn btn-primary" asp-area="" asp-controller="Delivery" asp-action="OrderHistory">OrderHistory</a>
+            <a class="btn btn-secondary" asp-area="" asp-controller="Delivery" asp-action="OrderEdit">OrderEdit</a>
+            <a class="btn btn-danger" asp-area="" asp-controller="Delivery" asp-action="OrderDelete">OrderCancel</a>
+            *@
+
+            <a align="center" class="btn btn-success" asp-area="" asp-controller="Equipment" asp-action="AddToEquipment">AddToEquipment</a>
+
+        </div>
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success">
+                @TempData["SuccessMessage"]
+            </div>
+        }
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger">
+                @TempData["ErrorMessage"]
+            </div>
+        }
+
+        @section Scripts {
+            @{
+                await Html.RenderPartialAsync("_ValidationScriptsPartial");
+            }
+        }
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLR5Rg5aTys1c6xEAA9k1A08lls5Q4tFi5VDV5f7hN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-PLMCHElMhLccK35ZfAosz16p7eKniydSfqY9eG4mcWmnpBKNFVuh87mjo+pG/E29" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLR5Rg5aTys1c6xEAA9k1A08lls5Q4tFi5VDV5f7hN" crossorigin="anonymous"></script>
+    <script src="~/js/site.js"></script>
+</body>
+</html>

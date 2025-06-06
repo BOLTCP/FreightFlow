@@ -1,0 +1,56 @@
+﻿@model FreightFlow.Models.OrderHistoryViewModel
+
+@{
+    ViewData["Title"] = "OrderHistory";
+}
+
+<h1>Details</h1>
+
+<div>
+
+
+
+    @if (Model.Equipments != null && Model.Equipments.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>No</th>
+                    <th>Equipment Name</th>
+                    <th>Type</th>
+                    <th>LoadCapacity</th>
+                    <th>CurrentStatus</th>
+                    <!-- Add other columns as necessary -->
+                </tr>
+            </thead>
+            <tbody>
+
+                @{
+                    var counter = 1;
+                }
+
+                @foreach (var item in Model.Equipments)
+                {
+                    <tr>
+                        <td>@item.EquipmentId</td>
+                        <td>@counter</td>
+                        <td>@item.Name</td>
+                        <td>@item.Type</td>
+                        <td>@item.LoadCapacity</td>
+                        <td>@item.CurrentStatus</td>
+                        <!-- Add other columns as necessary -->
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No records found for Client ID: @Global1.ClientId</p>
+    }
+    <a class="btn btn-success" asp-action="OrderDelivery">OrderDelivery</a>
+    <a class="btn btn-primary" asp-action="OrderEdit">OrderEdit</a>
+    <a class="btn btn-danger" asp-action="OrderDelete">OrderDelete</a>
+    <a class="btn btn-danger" asp-action="OrderHistory">OrderHistory</a>
+</div>

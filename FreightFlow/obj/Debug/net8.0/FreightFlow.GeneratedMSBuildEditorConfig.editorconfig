@@ -1,0 +1,117 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FreightFlow
+build_property.RootNamespace = FreightFlow
+build_property.ProjectDir = /Users/ariunbold/Desktop/FreightFlow/FreightFlow/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/ariunbold/Desktop/FreightFlow/FreightFlow
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Customers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Customers/CustomerEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0N1c3RvbWVyRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Customers/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0Rhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Customers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Customers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Customers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Customers/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Delivery/AddOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVsaXZlcnkvQWRkT3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Delivery/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVsaXZlcnkvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Delivery/OrderDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVsaXZlcnkvT3JkZXJEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Delivery/OrderDelivery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVsaXZlcnkvT3JkZXJEZWxpdmVyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Delivery/OrderEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVsaXZlcnkvT3JkZXJFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Delivery/OrderHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVsaXZlcnkvT3JkZXJIaXN0b3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Equipment/AddToEquipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXF1aXBtZW50L0FkZFRvRXF1aXBtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Equipment/EditEquipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXF1aXBtZW50L0VkaXRFcXVpcG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Equipment/EquipmentDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXF1aXBtZW50L0VxdWlwbWVudERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Equipment/EquipmentEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXF1aXBtZW50L0VxdWlwbWVudEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Equipment/EquipmentHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXF1aXBtZW50L0VxdWlwbWVudEhpc3RvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Equipment/ListofEquipments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXF1aXBtZW50L0xpc3RvZkVxdWlwbWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Equipment/RemoveEquipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXF1aXBtZW50L1JlbW92ZUVxdWlwbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ariunbold/Desktop/FreightFlow/FreightFlow/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-h7ebydp3tf

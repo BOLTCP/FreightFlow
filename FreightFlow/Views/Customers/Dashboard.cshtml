@@ -1,0 +1,18 @@
+﻿@model FreightFlow.Models.Customer
+@{
+    ViewData["Title"] = "Dashboard";
+}
+    
+
+<hr>
+<div class="alert alert-success">
+    Login successfull!
+</div>
+<div class="text-center">
+    <a class="btn btn-success" asp-area="" asp-controller="Delivery" asp-action="OrderDelivery">Order_Delivery</a>
+    <a class="btn btn-secondary" asp-area="" asp-controller="Customers" asp-action="Details">Details</a>
+    <a class="btn btn-danger" asp-area="" asp-controller="Customers" asp-action="Details">Delete</a>
+    <a class="btn btn-primary" asp-area="" asp-controller="Customers" asp-action="CustomerEdit">Edit</a>
+</div>
+<hr />
+

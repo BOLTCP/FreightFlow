@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreightFlow", "FreightFlow\FreightFlow.csproj", "{9FD9C470-431E-41F8-B6AE-C489A69F07F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FD9C470-431E-41F8-B6AE-C489A69F07F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD9C470-431E-41F8-B6AE-C489A69F07F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD9C470-431E-41F8-B6AE-C489A69F07F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD9C470-431E-41F8-B6AE-C489A69F07F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3991280C-43D5-4326-A27B-D09D0FDBFD3B}
+	EndGlobalSection
+EndGlobal
